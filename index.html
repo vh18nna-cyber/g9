@@ -4,8 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G9</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+   <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    nav{
+        background-color: rgb(29, 25, 25);
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .logo{
+        color: white;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .links{
+        display: flex;
+        gap: 20px;
+    }
+
+    .links a:hover{
+          color: #00bcd4;
+    }
+
+    button{
+        font-size: 30px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+ 
+   </style>
 </head>
 <body>
-    <h1>Welcome to my new branch</h1>
+    <nav>
+        <a href="a" class="logo"><i class="fa-brands fa-amazon"></i>Amazon</a>
+
+        <div class="links">
+            <a href="e">Home</a>
+            <a href="e">About</a>
+            <a href="e">Services</a>
+            <a href="e">Contact</a>
+        </div>
+
+        <button><i class="fa-solid fa-bars"></i></button>
+    </nav>
 </body>
 </html>
