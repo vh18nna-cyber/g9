@@ -61,7 +61,7 @@
     .hero {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: stretch;
         text-align: center;
         min-height: 60vh;
         padding: 20px;
@@ -72,7 +72,13 @@
     }
 
     .hero-content {
-        max-width: 650px;
+        flex: 1;
+        display: flex;
+        padding: 40px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .hero-content h1 {
@@ -100,6 +106,15 @@
      background-color: #e2a063;
     }
 
+    .hero-img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        max-height: 60vh;
+        display: block;
+        margin-left: 100px;
+    }
+
  
    </style>
 </head>
@@ -118,11 +133,18 @@
     </nav>
 
     <section class="hero">
+     <div class="column">
+        <img src="pics/images2.jpg" alt="amazing" class="hero-img">
+     </div>
+
+
      <div class="hero-content">
         <h1>Welcome to Amazon</h1>
         <p>Buy and explore.</p>
         <a href="#get-started" class="hero-btn">Get Started</a>
      </div>
+
+     
     </section>
 
       <script>
