@@ -58,6 +58,48 @@
         cursor: pointer;
     }
 
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 60vh;
+        padding: 20px;
+        color: white;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("hero.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-content {
+        max-width: 650px;
+    }
+
+    .hero-content h1 {
+       font-size: 3rem;
+       margin-bottom: 15px;
+    }
+
+    .hero-content p {
+      font-size: 1.25rem;
+      margin-bottom: 25px;
+    }
+
+    .hero-btn {
+     display: inline-block;
+     padding: 12px 28px;
+     background-color: #ff7b00;
+     color: white;
+     text-decoration: none;
+     border-radius: 5px;
+     font-weight: bold;
+     transition: background-color 0.3s ease;
+    }
+
+    .hero-btn:hover {
+     background-color: #e2a063;
+    }
+
  
    </style>
 </head>
@@ -72,7 +114,24 @@
             <a href="e">Contact</a>
         </div>
 
-        <button><i class="fa-solid fa-bars"></i></button>
+        <button id="menu-btn"><i class="fa-solid fa-bars"></i></button>
     </nav>
+
+    <section class="hero">
+     <div class="hero-content">
+        <h1>Welcome to Amazon</h1>
+        <p>Buy and explore.</p>
+        <a href="#get-started" class="hero-btn">Get Started</a>
+     </div>
+    </section>
+
+      <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const navLinks = document.getElementById('links');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
